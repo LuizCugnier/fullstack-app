@@ -1,2 +1,14 @@
-# fullstack-app
-Site fullstack com React, Express e MySQL
+# Fullstack-App
+
+Projeto site fullstack utilizando as seguintes tecnologias:
+
+-->FrontEnd:
+
+-ReactJs
+
+--> BackEnd:
+
+-Express
+
+-MySQL
+
