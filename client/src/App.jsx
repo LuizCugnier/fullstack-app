@@ -1,10 +1,9 @@
-import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
-import Home from "./pages/Home/Home"
-import CreatePost from './pages/CreatePost/CreatePost';
+import Home from "./pages/Home/Home";
+import CreatePost from "./pages/CreatePost/CreatePost";
 
 import "./App.css";
-
 
 function App() {
   return (
@@ -13,8 +12,8 @@ function App() {
         <Link to={"/createPost"}>Create a Post</Link>
         <Link to={"/"}>Home Page</Link>
         <Routes>
-          <Route path="/" element={<Home/>}/>
-          <Route path='/createPost' element={<CreatePost/>}/>
+          <Route path="/" element={<Home />} />
+          <Route path="/createPost" element={<CreatePost />} />
         </Routes>
       </Router>
     </div>
