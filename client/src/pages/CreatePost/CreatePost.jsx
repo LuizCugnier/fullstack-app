@@ -2,14 +2,17 @@ import React from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 import "./CreatePost.css";
 
 const CreatePost = () => {
+  let navigate = useNavigate();
+
   const initialValues = {
     title: "",
     postText: "",
-    username: "",   
+    username: "",
   };
 
   const validationSchema = Yup.object().shape({
@@ -19,9 +22,8 @@ const CreatePost = () => {
   });
 
   const onSubmit = (data) => {
-    axios.post("http://localhost:3000/posts", data).then((response) => {
-      console.log("Deu certo porra");
-      //fazer o pedido para o backend criar no BD
+    axios.post("http://localhost:3306/posts", data).then((response) => {
+      navigate("/");
     });
   };
 
