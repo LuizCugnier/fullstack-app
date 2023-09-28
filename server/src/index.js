@@ -12,12 +12,13 @@ const db = require('../models/')    //Chama os modelos do DataBase
 
 //Routes
 const postRouter = require("../routes/Posts")                   //Guarda a rota 'post' vinda da pasta routes
-app.use('/posts', postRouter)                                   //Fala para o express usar o endpoint '/posts' como rota 'postRouter'  
+app.use('/posts', postRouter)                               //Fala para o express usar o endpoint '/posts' como rota 'postRouter'  
+
+const userRouter = require("../routes/Users")
+app.use('/users', userRouter)
 
 db.sequelize.sync().then(() => {                                //usa o sequelize para sincronizar as tabelas do BD e apos executa a função
     app.listen(PORT, () => {                                    //Chama a função do express 'listen' que fica escutando a porta definida esperando uma ação/mudança
         console.log(`Servidor está rodando na porta ${PORT}`)   //Printa no console que o servidor está rodando na porta definida
     })
 })
-
-
