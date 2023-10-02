@@ -17,6 +17,9 @@ app.use('/posts', postRouter)                               //Fala para o expres
 const userRouter = require("../routes/Users")
 app.use('/users', userRouter)
 
+const commentsRouter = require("../routes/Comments")
+app.use('/comments', commentsRouter)
+
 db.sequelize.sync().then(() => {                                //usa o sequelize para sincronizar as tabelas do BD e apos executa a função
     app.listen(PORT, () => {                                    //Chama a função do express 'listen' que fica escutando a porta definida esperando uma ação/mudança
         console.log(`Servidor está rodando na porta ${PORT}`)   //Printa no console que o servidor está rodando na porta definida
