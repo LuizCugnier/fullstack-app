@@ -1,5 +1,4 @@
 .createPostPage {
-    border: solid;
     padding: 10px;
 
     width: 100vw;
@@ -9,8 +8,6 @@
     justify-content: center;
     align-items: center;
 }
-
-
 
 .formContainer {
     border: 5px solid dodgerblue;
@@ -22,10 +19,7 @@
     width: 500px;
     height: auto;
     padding: 20px;
-    
 }
-
-
 
 .formContainer #inputCreatePost {
     height: 40px;
@@ -35,7 +29,6 @@
     border-radius: 10px;
     padding-left: 10px;
     font-size: 20px;
-    
 }
 
 .formContainer label {
@@ -43,7 +36,7 @@
     font-size: 20px;
 }
 
-.formContainer button {
+.createButton {
     margin-top: 15px;
     height: 40px;
     border: none;
@@ -54,7 +47,7 @@
 
 .formContainer button:hover {
     cursor: pointer;
-    background-color: dodgerblue;   
+    background-color: dodgerblue;
 }
 
 span {

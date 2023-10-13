@@ -1,0 +1,22 @@
+.postPage {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.leftSide {
+    display: flex;
+    width: 50vw;
+    justify-content: center;
+
+}
+
+.rightSide {
+    display: flex;
+    width: 50vw;
+    justify-content: center;
+
+
+}

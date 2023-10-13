@@ -7,6 +7,21 @@ router.get('/', async (req, res) => {                 //Cria uma rota get no end
     res.json(listOfPosts)
 })
 
+router.get('/ById/:id', async (req, res) => {       //Cria uma rota get no endpoint "/ById/:id" com uma chave id "/:id" 
+    try {
+        const id = req.params.id
+        const post = await Posts.findByPk(id)
+        if (post) {
+            res.json(post)    
+        } else {
+            res.status(404).json("Id do post nao encontrado")
+        }
+        
+    } catch (error){
+        res.status(500).json({error: "Id do post nao encontrado"})
+    }
+})
+
 router.post('/', async (req, res) => {          //Cria uma rota post no endpoint '/posts/' - essa chamada tem um requerimento 'request' e uma resposta 'res'
     try {
         const post = req.body                       //Guarda o corpo do requerimento
