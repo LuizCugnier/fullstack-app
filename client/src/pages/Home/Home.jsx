@@ -9,7 +9,7 @@ const Home = () => {
   let navigate = useNavigate();
 
   useEffect(() => {
-    axios.get("http://localhost:3306/posts").then((response) => {
+    axios.get("http://localhost:3301/posts").then((response) => {
       setListOfPosts(response.data);
     });
   }, []);

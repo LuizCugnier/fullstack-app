@@ -9,7 +9,7 @@ const Post = () => {
   const [postObject, setPostObject] = useState([]);
 
   useEffect(() => {
-    axios.get(`http://localhost:3306/posts/ById/${id}`).then((response) => {
+    axios.get(`http://localhost:3301/posts/ById/${id}`).then((response) => {
       setPostObject(response.data);
     });
   }, []);

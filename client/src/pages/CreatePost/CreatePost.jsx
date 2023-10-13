@@ -22,7 +22,7 @@ const CreatePost = () => {
     });
 
     const onSubmit = (data) => {
-        axios.post("http://localhost:3306/posts", data).then((response) => {
+        axios.post("http://localhost:3301/posts", data).then((response) => {
             navigate("/");
         });
     };

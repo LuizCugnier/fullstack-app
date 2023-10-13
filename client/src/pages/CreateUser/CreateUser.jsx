@@ -27,7 +27,7 @@ const CreateUser = () => {
     };
 
     const onSubmit = (data) => {
-        axios.post("http://localhost:3306/users", data).then((response) => {
+        axios.post("http://localhost:3301/users", data).then((response) => {
             navigate("/");
         });
     };
