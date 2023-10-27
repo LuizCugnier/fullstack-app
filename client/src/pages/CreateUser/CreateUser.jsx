@@ -2,6 +2,7 @@ import axios from "axios";
 import * as Yup from "yup";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 import "./CreateUser.css";
 
@@ -25,7 +26,7 @@ const CreateUser = () => {
     };
 
     const onSubmit = (data) => {
-        axios.post("http://localhost:3301/users", data).then((response) => {
+        axios.post("http://localhost:3301/users", data).then(() => {
             navigate("/");
         });
     };
