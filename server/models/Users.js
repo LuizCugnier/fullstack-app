@@ -4,10 +4,18 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    senha: {
+    password: {
       type: DataTypes.STRING,
       allowNull: false,
     },
   });
+
+  // Users.associate = (models) => {
+  //   Users.hasMany(models.Comments, {
+  //       onDelete: "cascade",
+  //   });
+
+  // };
+
   return Users;
 };
