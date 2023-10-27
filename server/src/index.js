@@ -11,12 +11,10 @@ const PORT = process.env.PORT       //Guarda na variável POST o número da port
 const db = require('../models/')    //Chama os modelos do DataBase
 
 //Routes
-const postRouter = require("../routes/Posts")                   //Guarda a rota 'post' vinda da pasta routes
+const postRouter = require("../routes/Posts")                //Guarda a rota 'post' vinda da pasta routes
 app.use('/posts', postRouter)                               //Fala para o express usar o endpoint '/posts' como rota 'postRouter'  
-
 const userRouter = require("../routes/Users")
 app.use('/users', userRouter)
-
 const commentsRouter = require("../routes/Comments")
 app.use('/comments', commentsRouter)
 
