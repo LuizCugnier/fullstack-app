@@ -8,7 +8,6 @@ import "./CreateUser.css";
 
 const CreateUser = () => {
     let navigate = useNavigate();
-    const additionalClasse = "createButton";
 
     const initialValues = {
         username: "",
