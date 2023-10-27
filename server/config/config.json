@@ -1,10 +1,10 @@
 {
   "development": {
-    "username": "guto",
+    "username": "postgres",
     "password": "cezy229451668",
-    "database": "SiteTesteDB",
+    "database": "PostsAPI",
     "host": "localhost",
-    "dialect": "mysql"
+    "dialect": "postgres"
   },
   "test": {
     "username": "guto",
