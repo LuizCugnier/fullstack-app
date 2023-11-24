@@ -12,3 +12,4 @@ Projeto site fullstack utilizando as seguintes tecnologias:
 
 -MySQL
 
+#PROJETO EM ANDAMENTO :)
